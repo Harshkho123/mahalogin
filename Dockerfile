@@ -1,4 +1,3 @@
-FROM ubuntu:18.04
+FROM tomcat:8.5.37-jre8
 MAINTAINER harshkhode2589@gmail.com
-RUN apt-get update
-ADD https://harshalkho.jfrog.io/artifactory/Mytestrepo/webapp.war /opt/docker
+COPY mahaLogin-2.0.war /usr/local/tomcat/webapps
