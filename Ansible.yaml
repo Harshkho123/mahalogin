@@ -4,5 +4,5 @@
   tasks:
     - name: copy src.txt as dest.txt in the same dir
       copy:
-        src: /var/lib/jenkins/workspace/mahalogin/target/mahaLogin-2.0.war
+        src: /opt/artifact/target/mahaLogin-2.0.war
         dest: /opt/tomcat/webapps
