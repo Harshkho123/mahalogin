@@ -6,9 +6,3 @@
       copy:
         src: /opt/artifact/target/mahaLogin-2.0.war
         dest: /opt/tomcat/webapps
-       notify: Restart tomcat
-  handlers:
-    - name: Restart tomcat
-      service: 
-         name: "tomcat"
-         state: restarted
